@@ -1,6 +1,8 @@
 git config --global user.name "Maciel Aguiar"  
 
-git config --global user.email "maciel.aguiar@live.com"      
+git config --global user.email "maciel.aguiar@live.com"  
+
+git config --global credential.helper cache (salva token do github)
 
 
 git status   
