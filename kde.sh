@@ -3,7 +3,7 @@
 sudo timedatectl set-ntp true
 sudo hwclock --systohc
 
-sudo reflector -c Brazil -a 6 --sort rate --save /etc/pacman.d/mirrorlist
+sudo reflector --country "United States" --a 10 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
 
 sudo firewall-cmd --add-port=1025-65535/tcp --permanent
 sudo firewall-cmd --add-port=1025-65535/udp --permanent
