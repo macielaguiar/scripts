@@ -2,8 +2,8 @@ git config --global user.name "Maciel Aguiar"
 
 git config --global user.email "maciel.aguiar@live.com"  
 
-git config --global credential.helper cache (salva token do github)
-
+git config --global credential.helper cache (salva senha token no cache)
+git config --global --unset credential.helper (remove senha token do cache)
 
 git status   
 git add kvm.sh EXcript.sh pacotes VirtManagerQemu tutoriais-master/ zshrc zsh.sh

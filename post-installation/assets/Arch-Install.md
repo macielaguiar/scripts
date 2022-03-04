@@ -57,7 +57,7 @@ umount /mnt
 Realizamos novamente a montagem da partição principal, porém dessa vez com a montagem do subvolume.
 
 ```
-mount -o rw,relatime,ssd,subvol=@  /dev/nvme0n1p2 /mnt
+mount -o rw,noatime,compress=zstd,defaults,ssd,subvol=@  /dev/nvme0n1p2 /mnt
 ```
 
 Crie a seguinte estrutura de pasta:
