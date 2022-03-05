@@ -39,3 +39,5 @@ git checkout (alterna de branch - adicione o nome)
 git push origin teste  =   adicionando nova branch
 
 git reset --hard d302bab (remove commit)
+
+git fetch - faz download dos arquivos remotos e verifica mudanças.
