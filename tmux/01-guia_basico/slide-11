@@ -1,0 +1,37 @@
+# [tmux] Guia básico de sobrevivência
+
+## Copiando e colando
+
+A rigor, o 'modo buffer' é o 'modo cópia',
+mas é preciso executar o comando:
+
+: setw -g mode-keys vi
+
++ Iniciar o modo cópia
+
+: PREFIXO [          # Entra no modo cópia
+: PREFIXO PgUp/PgDn  # Entra em modo cópia e rola a área visível
+
++ Sair do modo de cópia
+
+: Tecla 'q'
+
++ Movimentação
+
+: Teclas de direção, PgUp e PgDn
+: Teclas 'hjkl', gg e G
+: Teclas '^' e '$' para início e fim de linha
+
++ Copiando
+
+: Tecla 'ESPAÇO'   # Inicia a seleção
+: Tecla 'ENTER'    # Copia a seleção e sai do modo cópia
+: Tecla 'ESC'      # Cancela a selação
+
++ Colar
+
+: PREFIXO ]
+
++ Colar do histórico (menu)
+
+: PREFIXO =

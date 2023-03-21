@@ -1,0 +1,30 @@
+# [tmux] Guia básico de sobrevivência
+
+## Operações com janelas
+
+
++ Criando uma nova janela
+
+: PREFIXO c
+
+
++ Mudando de janela
+
+: PREFIXO ÍNDICE    # Muda para a janela de índice 'n'
+: PREFIXO n         # Muda para a janela seguinte
+: PREFIXO p         # Muda para a próxima janela
+
+
++ Renomeando janelas
+
+: PREFIXO ,
+
+
++ Destruindo a janela corrente
+
+: PREFIXO &     # Pede confirmação
+
+
++ Menu de janelas e sessões
+
+: PREFIXO w

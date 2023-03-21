@@ -1,0 +1,20 @@
+# [tmux] Guia básico de sobrevivência
+
+## Parte 1
+
++ Apresentação
+
+* Multiplexador de terminal
+* Por que utilizar o 'tmux'
+
++ Trabalhando com sessões
+
+* Listando sessões
+* Criando novas sessões
+* Saindo de uma sessão
+* Reconectando a última sessão
+* Reconectando uma sessão existente
+* Destruindo uma sessão
+* Destruindo todas as sessões
+* Renomeando sessões
+

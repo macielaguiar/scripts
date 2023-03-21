@@ -1,0 +1,30 @@
+# [tmux] Guia básico de sobrevivência
+
+## Trabalhando com sessões
+
+
++ Listando sessões
+
+: :~$ tmux ls
+
+
++ Criando novas sessões
+
+: :~$ tmux new                          # Cria nova sessão
+: :~$ tmux new -s NOME_DA_SESSÃO        # Cria nova sessão com um nome
+: :~$ tmux new [-s NOME_DA_SESSÃO] -d   # Cria nova sessão mas não conecta
+
+
++ Desconectando de uma sessão
+
+: PREFIXO d   # Desconecta da sessão corrente
+:             # PREFIXO padrão:  CTRL+b
+
+
++ Saindo sem preservar a sessão
+
+: PREFIXO x         # Fechando cada painel aberto (confirma)
+: PREFIXO &         # Fechando cada 'janela' aberta (confirma)
+: Comando 'exit'    # Terminando cada sessão do shell
+: CTRL+d            # Terminando cada sessão do shell
+

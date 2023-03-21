@@ -1,0 +1,31 @@
+# [tmux] Guia básico de sobrevivência
+
+## Trabalhando com sessões
+
+
++ Reconectando a última sessão
+
+: :~$ tmux a
+
+
++ Reconectando uma sessão existente
+
+: :~$ tmux a -t NOME_DA_SESSÃO
+
+
++ Destruindo uma sessão específica
+
+: :~$ tmux kill-session -t NOME_DA_SESSÃO
+
++ Destruindo todas as sessões
+
+: :~$ tmux kill-server
+
+
++ Renomeando uma sessão
+
+: :~$ tmux rename-session -t NOME_ATUAL NOME_NOVO
+
+Ou, já na sessão...
+
+: PREFIXO $

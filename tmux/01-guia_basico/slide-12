@@ -1,0 +1,16 @@
+# [tmux] Guia básico de sobrevivência
+
+## Listando e alternando sessões e janelas
+
+
++ Árvore de sessões
+
+: PREFIXO s         # Árvore fechada
+: PREFIXO w         # Árvore expandida
+
+
++ Circulando pelas sessões
+
+: PREFIXO (         # Circula por todas as sessões 
+: PREFIXO )         # Circula por todas as sessões
+

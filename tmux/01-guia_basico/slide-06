@@ -1,0 +1,29 @@
+# [tmux] Guia básico de sobrevivência
+
+## Parte 2
+
++ Operações com janelas
+
+* Criando uma nova janela
+* Mudando de janela
+* Renomeando janelas
+* Destruindo a janela corrente
+* Menu de janelas e sessões
+
++ Operações com painéis
+
+* Dividindo a janela
+* Destruindo painéis
+* Movimentação entre os painéis
+* Destacando um painel (zoom)
+* Convertendo painéis em janelas
+* Redimensionando painéis
+
++ Diversos
+
+* A linha de comandos
+* Descobrindo atalhos e comandos
+* Trabalhando com os buffers
+* Copiando e colando
+* Listando e alternando sessões e janelas
+

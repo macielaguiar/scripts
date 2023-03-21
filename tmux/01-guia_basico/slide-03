@@ -1,0 +1,30 @@
+# [tmux] Guia básico de sobrevivência
+
+## Apresentação
+
+
++ Multiplexador de terminal
+
+Várias sessões de terminal simultâneas na
+mesma janela.
+
+
++ Por que utilizar
+
+* Organiza a bagunça das janelas;
+* Preserva sessões quando desconectado;
+* Preserva sessões de SSH;
+* Mais prático do que as janelas do Vim!
+
+
+## Atenção!
+
+Sessões e processos não serão preservados
+se o computador for desligado/reiniciado!
+
+
++ Obtendo ajuda
+
+: man tmux
+: PREFIXO ? (PREFIXO padrão: CTRL+b)
+: https://tmuxcheatsheet.com

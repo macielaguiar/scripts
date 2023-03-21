@@ -1,0 +1,19 @@
+# [tmux] Guia básico de sobrevivência
+
+## Operações com painéis
+
+
++ Destacando um painel (zoom)
+
+: PREFIXO z           # Alterna o zoom do painel
+
+
++ Convertendo painéis em janelas
+
+: PREFIXO !           # Irreversível?
+
+
++ Redimensionando painéis
+
+: PREFIXO+CTRL SETAS  # Redimensiona na direção das setas
+: PREFIXO E           # Distribui em tamanhos iguais

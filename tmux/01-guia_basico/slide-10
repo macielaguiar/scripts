@@ -1,0 +1,32 @@
+# [tmux] Guia básico de sobrevivência
+
+## Diversos
+
+
++ A linha de comandos
+
+: PREFIXO :
+
++ Descobrindo atalhos e comandos
+
+: PREFIXO ?
+
++ Trabalhando com buffers
+
+Algumas operações fazem o tmux entrar
+em modo 'buffer', por exemplo...
+
+* Rolando a saída do shell com o mouse (com 'set -g mouse on');
+* Com o atalho 'PREFIXO PgUp';
+* Acessando mensagens do tmux ou a ajuda;
+* Iniciando o modo cópia;
+
++ Busca
+
+: Tecla '/'     # Inicia busca após cursor
+: Tecla '?'     # Inicia busca antes do cursor
+: Tecla 'n'     # Próxima ocorrência
+: Tecla 'N'     # Ocorrência anterior
+
+## Para sair do modo buffer, basta teclar 'q'.
+

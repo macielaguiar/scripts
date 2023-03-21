@@ -1,0 +1,28 @@
+# [tmux] Guia básico de sobrevivência
+
+## Operações com painéis
+
+
++ Dividindo a janela
+
+: PREFIXO %         # Divide o painel verticalmente
+: PREFIXO "         # Divide o painel horizontalmente
+
+
++ Destruindo painéis
+
+: PREFIXO x         # Pede confirmação
+
+
++ Movimentação entre os painéis
+
+: PREFIXO ;         # Volta ao último painel ativo
+
+: PREFIXO SETAS     # Muda para o painel na direção da seta
+
+: PREFIXO {         # Move painel para a esquerda
+: PREFIXO }         # Move painel para a direita
+
+: PREFIXO q         # Exibe os índices dos painéis
+: PREFIXO q ÍNDICE  # Vai para o painel de índice 'n'
+
