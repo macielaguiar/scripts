@@ -1,0 +1,246 @@
+# [tmux] Guia básico de sobrevivência
+
+## Apresentação
+
+
++ Multiplexador de terminal
+
+Várias sessões de terminal simultâneas na
+mesma janela.
+
+
++ Por que utilizar
+
+* Organiza a bagunça das janelas;
+* Preserva sessões quando desconectado;
+* Preserva sessões de SSH;
+* Mais prático do que as janelas do Vim!
+
+
+## Atenção!
+
+Sessões e processos não serão preservados
+se o computador for desligado/reiniciado!
+
+
++ Obtendo ajuda
+
+: man tmux
+: PREFIXO ? (PREFIXO padrão: CTRL+b)
+: https://tmuxcheatsheet.com
+
+
+
+## Trabalhando com sessões
+
+
++ Listando sessões
+
+: :~$ tmux ls
+
+
++ Criando novas sessões
+
+: :~$ tmux new                          # Cria nova sessão
+: :~$ tmux new -s NOME_DA_SESSÃO        # Cria nova sessão com um nome
+: :~$ tmux new [-s NOME_DA_SESSÃO] -d   # Cria nova sessão mas não conecta
+
+
++ Desconectando de uma sessão
+
+: PREFIXO d   # Desconecta da sessão corrente
+:             # PREFIXO padrão:  CTRL+b
+
+
++ Saindo sem preservar a sessão
+
+: PREFIXO x         # Fechando cada painel aberto (confirma)
+: PREFIXO &         # Fechando cada 'janela' aberta (confirma)
+: Comando 'exit'    # Terminando cada sessão do shell
+: CTRL+d            # Terminando cada sessão do shell
+
+
+## Trabalhando com sessões
+
+
++ Reconectando a última sessão
+
+: :~$ tmux a
+
+
++ Reconectando uma sessão existente
+
+: :~$ tmux a -t NOME_DA_SESSÃO
+
+
++ Destruindo uma sessão específica
+
+: :~$ tmux kill-session -t NOME_DA_SESSÃO
+
++ Destruindo todas as sessões
+
+: :~$ tmux kill-server
+
+
++ Renomeando uma sessão
+
+: :~$ tmux rename-session -t NOME_ATUAL NOME_NOVO
+
+Ou, já na sessão...
+
+: PREFIXO $
+
+
+
+## Operações com janelas
+
+
++ Criando uma nova janela
+
+: PREFIXO c
+
+
++ Mudando de janela
+
+: PREFIXO ÍNDICE    # Muda para a janela de índice 'n'
+: PREFIXO n         # Muda para a janela seguinte
+: PREFIXO p         # Muda para a próxima janela
+
+
++ Renomeando janelas
+
+: PREFIXO ,
+
+
++ Destruindo a janela corrente
+
+: PREFIXO &     # Pede confirmação
+
+
++ Menu de janelas e sessões
+
+: PREFIXO w
+
+## Parte 2
+
++ Operações com janelas
+
+* Criando uma nova janela
+* Mudando de janela
+* Renomeando janelas
+* Destruindo a janela corrente
+* Menu de janelas e sessões
+
++ Operações com painéis
+
+* Dividindo a janela
+* Destruindo painéis
+* Movimentação entre os painéis
+* Destacando um painel (zoom)
+* Convertendo painéis em janelas
+* Redimensionando painéis
+
++ Diversos
+
+* A linha de comandos
+* Descobrindo atalhos e comandos
+* Trabalhando com os buffers
+* Copiando e colando
+* Listando e alternando sessões e janelas
+
+
+
+## Operações com painéis
+
+
++ Dividindo a janela
+
+: PREFIXO %         # Divide o painel verticalmente
+: PREFIXO "         # Divide o painel horizontalmente
+
+
++ Destruindo painéis
+
+: PREFIXO x         # Pede confirmação
+
+
++ Movimentação entre os painéis
+
+: PREFIXO ;         # Volta ao último painel ativo
+
+: PREFIXO SETAS     # Muda para o painel na direção da seta
+
+: PREFIXO {         # Move painel para a esquerda
+: PREFIXO }         # Move painel para a direita
+
+: PREFIXO q         # Exibe os índices dos painéis
+: PREFIXO q ÍNDICE  # Vai para o painel de índice 'n'
+
+## Operações com painéis
+
++ Destacando um painel (zoom)
+
+: PREFIXO z           # Alterna o zoom do painel
+
+
++ Convertendo painéis em janelas
+
+: PREFIXO !           # Irreversível?
+
+
++ Redimensionando painéis
+
+: PREFIXO+CTRL SETAS  # Redimensiona na direção das setas
+: PREFIXO E           # Distribui em tamanhos iguais
+
+
+## Copiando e colando
+
+A rigor, o 'modo buffer' é o 'modo cópia',
+mas é preciso executar o comando:
+
+: setw -g mode-keys vi
+
++ Iniciar o modo cópia
+
+: PREFIXO [          # Entra no modo cópia
+: PREFIXO PgUp/PgDn  # Entra em modo cópia e rola a área visível
+
++ Sair do modo de cópia
+
+: Tecla 'q'
+
++ Movimentação
+
+: Teclas de direção, PgUp e PgDn
+: Teclas 'hjkl', gg e G
+: Teclas '^' e '$' para início e fim de linha
+
++ Copiando
+
+: Tecla 'ESPAÇO'   # Inicia a seleção
+: Tecla 'ENTER'    # Copia a seleção e sai do modo cópia
+: Tecla 'ESC'      # Cancela a selação
+
++ Colar
+
+: PREFIXO ]
+
++ Colar do histórico (menu)
+
+: PREFIXO =
+
+
+## Listando e alternando sessões e janelas
+
+
++ Árvore de sessões
+
+: PREFIXO s         # Árvore fechada
+: PREFIXO w         # Árvore expandida
+
+
++ Circulando pelas sessões
+
+: PREFIXO (         # Circula por todas as sessões 
+: PREFIXO )         # Circula por todas as sessões
